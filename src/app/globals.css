@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer base {
+  html,
+  body {
+    @apply dark:bg-trueGray-900;
+    @apply bg-[#bbc1c5]
+  }
+
+  .font-outline-2 {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;  }
+  
+}
+
+
+
+.rcsc-nav-container {
+  position: absolute;
+  bottom: -110px !important;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+}
+
+
+.rcsc-nav-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px !important;
+  height: 45px !important;;
+  border-radius: 50%;
+  margin: 0 6px;
+  padding: 8px;
+  cursor: pointer;
+  background-color: #5153c5 !important;
+  transition: background-color 0.3s;
+}
+
+
