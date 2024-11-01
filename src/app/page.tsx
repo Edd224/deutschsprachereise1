@@ -18,7 +18,10 @@ export default function Home() {
       </section>
 
       <section id="benefits">
-        <SectionTitle
+        <Benefits data={benefitOne} />
+        <Benefits imgPos="right" data={benefitTwo} />
+        <Benefits data={benefitThre} />
+        {/* <SectionTitle
           preTitle="Benefity"
           title="Chcete sa naučiť nemecky z pohodlia kancelárie alebo domova?"
         >
@@ -26,11 +29,8 @@ export default function Home() {
           Pripadá vám nemčina ťažká?<br />
           Je váš partner cudzinec a chce sa naučiť po slovensky?<br />
           Potrebujete preložiť dokumenty z/do nemeckého jazyka, prípadne skorigovať vaše texty?
-        </SectionTitle>
+        </SectionTitle> */}
 
-        <Benefits data={benefitOne} />
-        <Benefits imgPos="right" data={benefitTwo} />
-        <Benefits data={benefitThre} />
       </section>
 
       <SectionTitle

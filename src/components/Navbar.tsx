@@ -51,7 +51,7 @@ export const Navbar = () => {
         <Disclosure>
           {({ open }) => (
             <>
-              <Disclosure.Button className="px-2 py-1 text-white rounded-md lg:hidden hover:text-indigo-500 focus:text-white">
+              <Disclosure.Button className="px-2 py-1 ml-10 text-black dark:text-white rounded-md lg:hidden hover:text-indigo-500 focus:text-white">
                 {open ? (
                   <svg
                     className="w-6 h-6"
@@ -85,20 +85,20 @@ export const Navbar = () => {
                 )}
               </Disclosure.Button>
 
-              <Disclosure.Panel className="flex flex-wrap bg-[#181822]  w-full  h-[400px] my-5 p-6 lg:hidden">
+              <Disclosure.Panel className="flex flex-col justify-center bg-[#222] rounded-xl w-full  h-[300px] my-5 p-6 lg:hidden">
                 {navigation.map((item) => (
                   <ScrollLink
                     key={item.name}
                     to={item.href}
                     smooth={true}
                     duration={1000}
-                    className="w-full  flex items-center justify-center py-2  text-gray-100 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 cursor-pointer"
+                    className="px-4 py-4 text-lg font-normal text-gray-200 cursor-pointer border-l-2 "
+                    activeClass="border-l-2 border-transparent"
                     spy={true}
-                    offset={-40} // pre odsun od vrchu obrazovky
+                    offset={-10}
                   >
                     {item.name}
-                  </ScrollLink>
-                ))}
+                  </ScrollLink>))}
               </Disclosure.Panel>
             </>
           )}
@@ -112,7 +112,8 @@ export const Navbar = () => {
                   to={item.href}
                   smooth={true}
                   duration={500}
-                  className="px-4 py-2 text-lg font-normal text-black dark:text-gray-200 hover:text-indigo-500 cursor-pointer"
+                  className="px-4 py-2 text-lg font-normal text-black dark:text-gray-200 cursor-pointer"
+                  activeClass=""
                   spy={true}
                   offset={-70}
                 >

@@ -11,7 +11,7 @@ import { Typed } from "react-typed";
 import { useEffect, useRef } from "react";
 import localFont from "next/font/local";
 
-const alternativeFont = localFont({ 
+const alternativeFont = localFont({
   src: '../app/font/EireneSans-Regular.otf'
 })
 
@@ -27,7 +27,7 @@ const TypedComponent = () => {
         "PREKLADY Z/DO NEMECKÉHO JAZYKA",
         "EDITORSKÁ ČINNOSŤ",
       ],
-      typeSpeed: 65,
+      typeSpeed: 120,
       backSpeed: 20,
       loop: true,
       showCursor: false,
@@ -45,7 +45,7 @@ const TypedComponent = () => {
   return (
     <div
       ref={el}
-      className="py-5 h-24 text-base leading-normal lg:text-xl xl:text-2xl text-white flex items-center justify-center"
+      className="py-5 h-24 text-[18px] leading-normal lg:text-xl xl:text-2xl text-white flex items-center justify-center"
     />
   );
 };
@@ -62,13 +62,7 @@ export const Hero = () => {
           className="w-full h-[80%] object-cover opacity-100 dark:opacity-60 rounded-tl-[580px] rounded-tr-2xl "
         >
           <source src="/video/video-bg-2.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
         </video>
-
-        <div className="absolute inset-0  z-0"></div>
-
-        {/* Second pseudo border */}
-        <div className="absolute inset-0  z-0"></div>
       </div>
 
 
@@ -76,14 +70,16 @@ export const Hero = () => {
       {/* Content */}
       <Container className="relative z-10 flex flex-wrap top-0 sm:top-28">
         <div className="flex item-center mt-20 w-full lg:w-1/2">
-          <div className="max-w-2xl mb-8 flex flex-col justify-center items-center">
+          <div className="max-w-2xl mx-auto mb-8 flex flex-col justify-center items-center">
             <h1 className={`${alternativeFont.className} text-3xl font-bold text-white lg:text-4xl xl:text-6xl`}>
               Deutschsprachereise
             </h1>
-            <TypedComponent />
+            <div className="w-44 sm:w-full">
+              <TypedComponent />
+            </div>
           </div>
         </div>
-        <div className="flex items-center mx-auto justify-center w-[80%]  lg:w-1/2">
+        <div className="flex items-center mx-auto justify-center w-[40%]  lg:w-1/2">
           <div>
             <Image
               src={heroImg}
@@ -100,13 +96,13 @@ export const Hero = () => {
 
       <Container>
         <div className="flex flex-col justify-center py-4 mt-[30px] sm:mt-[160px] ">
-          <div className="text-2xl text-center text-white z-50">
+          <div className="text-2xl text-center text-white z-40">
             Dôveruje nám viac ako <span className="text-indigo-600">50+</span>{" "}
             študentov
           </div>
 
-          <div className="Logo flex justify-center gap-4 md:justify-around mt-2 z-50">
-            <div className=" ">
+          <div className="Logo flex justify-center gap-4 md:justify-around mt-2 z-30">
+            <div className="">
               <Image
                 src={adient}
                 width={150}

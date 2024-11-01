@@ -27,10 +27,10 @@ export const Cost = () => {
                     </h6>
                 </div>
 
-                <StackedCarousel height={containerHeight} autoplay={false} autoplayInterval={5000} >
-                    <div className="flex items-center justify-center flex-col rounded-tl-[200px] shadow-lg p-14 bg-black text-center h-96 w-full max-w-[calc(100%-20px)] md:w-[650px] my-12 mx-2">
+                <StackedCarousel height={containerHeight} autoplay={true} autoplayInterval={6000} >
+                    <div className="flex items-center justify-center flex-col shadow-lg p-14 bg-black text-center h-96 w-full max-w-[calc(100%-20px)] md:w-[750px] my-12 mx-2 rounded-lg">
                         <div className="absolute -top-0 -left-[-10px] sm:-left-[70px] mt-12 bg-black text-white px-3 py-2.5 rounded-md">
-                            <h1 className="text-2xl">Kurzy</h1>
+                            <h1 className="text-2xl ml-2">Kurzy</h1>
                         </div>
                         <div className="mb-6">
                             <Image
@@ -43,24 +43,24 @@ export const Cost = () => {
                             />
                         </div>
                         <div className="">
-                            <h2 className="text-2xl sm:text-3xl font-bold mb-2 text-white">
+                            <h2 className="text-lg sm:text-3xl font-bold mb-2 text-white">
                                 Individuálne kurzy
                             </h2>
                             <p className="text-base sm:text-lg text-gray-300">
                                 <em>15 EUR / 45 min.</em>
                             </p>
-                            <h2 className="text-2xl sm:text-3xl font-bold mt-4 text-white">
+                            <h2 className="text-lg sm:text-3xl font-bold mt-4 text-white">
                                 Skupinové kurzy
                             </h2>
-                            <ul className="text-base sm:text-lg  text-gray-300">
-                                <li>2 osoby<span className="ml-6"><em>8 EUR/ osoba</em></span></li>
-                                <li>3 osoby<span className="ml-6"><em>7 EUR/ osoba</em></span></li>
-                                <li>4 osoby<span className="ml-6"><em>6 EUR/ osoba</em></span></li>
+                            <ul className="text-base sm:text-lg text-gray-300">
+                                <li>2 osoby<span className="ml-2"><em>8 EUR osoba</em> / 45 min.</span></li>
+                                <li>3 osoby<span className="ml-2"><em>7 EUR osoba</em> / 45 min.</span></li>
+                                <li>4 osoby<span className="ml-2"><em>6 EUR osoba</em> / 45 min.</span></li>
                             </ul>
                         </div>
                     </div>
 
-                    <div className="flex items-center justify-center flex-col rounded-tl-[200px] shadow-lg p-8 bg-[#dd0000] text-center h-96 w-full max-w-[calc(100%-20px)] md:w-[650px] my-12 mx-2">
+                    <div className="flex items-center justify-center flex-col shadow-lg p-8 bg-[#dd0000] text-center h-96 w-full max-w-[calc(100%-20px)] md:w-[750px] my-12 mx-2 rounded-lg">
                         <div className="absolute  -top-0 -left-[-10px] sm:-left-[70px] mt-12 bg-[#dd0000] text-white px-3 py-2.5 rounded-md">
                             <h1 className="text-2xl">Preklady</h1>
                         </div>
@@ -77,7 +77,7 @@ export const Cost = () => {
                         <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-white">
                             Preklad
                         </h2>
-                        <p className="text-base text-gray-300 mb-4">
+                        <p className="text-sm text-gray-300 mb-4">
                             *Cena prekladu sa určuje v závislosti od počtu NS a na základe rozsahu, obsahu, náročnosti textu a termínu dodania.
                         </p>
                         <ul className="space-y-4 text-base sm:text-lg text-gray-300">
@@ -86,9 +86,9 @@ export const Cost = () => {
                         </ul>
                     </div>
 
-                    <div className="flex items-center justify-center flex-col rounded-tl-[200px] shadow-lg p-8 bg-[#ffce00] text-center h-96 w-full max-w-[calc(100%-20px)] md:w-[650px] my-12 mx-2">
+                    <div className="flex items-center justify-center flex-col ] shadow-lg p-8 bg-[#ffce00] text-center h-96 w-full max-w-[calc(100%-20px)] md:w-[750px] my-12 mx-2 rounded-lg">
                         <div className="absolute -top-0 -left-[-10px] sm:-left-[70px] mt-12 bg-[#ffce00] text-white px-3 py-2.5 rounded-md">
-                            <h1 className="text-2xl text-black sm:text-3xl">Korektúra</h1>
+                            <h1 className="text-2xl text-black ">Korektúra</h1>
                         </div>
                         <div className="mb-6">
                             <Image
