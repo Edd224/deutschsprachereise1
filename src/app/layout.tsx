@@ -15,10 +15,11 @@ import localFont from "next/font/local"
 
 export const metadata: Metadata = {
   title: "Deutschsprachereise",
-  description: "Objavte naše profesionálne online kurzy zamerané na firmy a jednotlivcov. Ponúkame odborné preklady z/do nemeckého jazyka a profesionálnu editorskú činnosť. Naša platforma zabezpečuje kvalitné vzdelávanie s dôrazom na praktické zručnosti a individuálny prístup. Pripojte sa k nám a posuňte svoje jazykové schopnosti na vyššiu úroveň!",
+  description: "Profesionálne online kurzy pre firmy aj jednotlivcov, odborné preklady z/do nemčiny a editorská činnosť. Posuňte svoje jazykové zručnosti na vyššiu úroveň s kvalitným vzdelávaním a individuálnym prístupom.",
   icons: {
     icon: "/favicon.ico"
-  }
+  },
+  keywords: ["online kurzy", "kurzy pre firmy", "kurzy pre jednotlivcov", "preklady do nemčiny", "editorské služby", "profesionálny rozvoj"]
 };
 
 
@@ -36,7 +37,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="sk" suppressHydrationWarning>
       <Head>
         <link rel="icon" href="/favicon.ico" /> 
       </Head>
