@@ -15,7 +15,7 @@ import localFont from "next/font/local"
 
 export const metadata: Metadata = {
   title: "Deutschsprachereise",
-  description: "Profesionálne online kurzy pre firmy aj jednotlivcov, odborné preklady z/do nemčiny a editorská činnosť. Posuňte svoje jazykové zručnosti na vyššiu úroveň s kvalitným vzdelávaním a individuálnym prístupom.",
+  description: "Profesionálne online kurzy a odborné preklady z/do nemčiny pre firmy a jednotlivcov. Zlepšite svoje jazykové zručnosti s individuálnym prístupom.",
   icons: {
     icon: "/favicon.ico"
   },

@@ -49,9 +49,9 @@ export const Benefits = (props: Readonly<BenefitsProps>) => {
             }`}>
           <div>
             <div className="flex flex-col w-full mt-4">
-              <h3 className="max-w-2xl mt-3 text-3xl font-bold  text-gray-800  lg:text-4xl dark:text-white">
+              <h1 className="max-w-2xl mt-3 text-3xl font-bold  text-gray-800  lg:text-4xl dark:text-white">
                 {data.title}
-              </h3>
+              </h1>
 
               <p className="max-w-2xl py-4 text-lg  text-gray-500 lg:text-xl xl:text-xl dark:text-gray-300">
                 {data.desc}
