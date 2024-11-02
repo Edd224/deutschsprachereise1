@@ -19,8 +19,16 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.ico"
   },
-  keywords: ["online kurzy", "kurzy pre firmy", "kurzy pre jednotlivcov", "preklady do nemčiny", "editorské služby", "profesionálny rozvoj"]
-};
+  keywords: [
+    "kurzy nemeckého jazyka",
+    "online kurzy nemčiny",
+    "kurzy pre firmy v nemčine",
+    "individuálne kurzy nemeckého jazyka",
+    "preklady do nemčiny",
+    "jazykové školenia pre firmy",
+    "profesionálny rozvoj v nemčine"
+  ]
+  };
 
 
 const primaryFont = localFont({ 
