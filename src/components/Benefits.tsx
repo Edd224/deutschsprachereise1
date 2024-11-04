@@ -66,7 +66,7 @@ export const Benefits = (props: Readonly<BenefitsProps>) => {
         <meta name="keywords" content="jazykové kurzy, online výučba, prekladateľská činnosť, korektúry, nemčina" />
       </Head>
 
-      <Container ref={ref} className="flex flex-wrap mb-20 lg:gap-10 lg:flex-nowrap border-t border-gray-100 dark:border-trueGray-700">
+      <Container ref={ref} className="flex flex-wrap bg-[#e2e8e4] dark:bg-[#131412] mb-20 lg:gap-10 lg:flex-nowrap rounded-lg">
         <motion.div
           initial="hidden"
           animate={controls}
@@ -90,7 +90,7 @@ export const Benefits = (props: Readonly<BenefitsProps>) => {
           animate={controls}
           variants={fadeInVariant}
           transition={{ duration: 0.5, delay: 0.4 }}
-          className={`flex flex-wrap items-center w-full lg:w-1/2 ${data.imgPos === "right" ? "lg:justify-end" : ""}`}
+          className={`flex flex-wrap sm:px-6 px-0 items-center w-full lg:w-1/2 ${data.imgPos === "right" ? "lg:justify-end" : ""}`}
         >
           <div className="flex flex-col w-full mt-4">
             <h1 className="max-w-2xl text-3xl font-bold text-gray-800 lg:text-4xl dark:text-white">
@@ -121,7 +121,7 @@ function Benefit(props: any) {
       transition={{ duration: 0.4 }}
       className="flex items-start mt-6 space-x-3"
     >
-      <div className="flex items-center justify-center flex-shrink-0 mt-1 bg-[#db280f] rounded-md w-11 h-11 ">
+      <div className="flex items-center justify-center flex-shrink-0 mt-1 bg-[#5e75a8] rounded-md w-11 h-11 ">
         {React.cloneElement(props.icon, {
           className: "w-7 h-7 text-indigo-50",
         })}

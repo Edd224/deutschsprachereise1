@@ -15,11 +15,11 @@ export const Faq = () => {
               {({ open }) => (
                 <>
                   <Disclosure.Button className={`flex items-center justify-between w-full px-4 py-4 text-lg text-left rounded-lg focus:outline-none focus-visible:ring focus-visible:ring-indigo-100 focus-visible:ring-opacity-75 ${
-                    open ? "bg-gray-200 dark:bg-[#0f1f27]" : "bg-gray-50 dark:bg-transparent"
-                  } text-gray-800 hover:bg-gray-100 dark:text-gray-200`}>
+                    open ? "bg-[#e2e8e4] dark:bg-[#0f1b19]" : "bg-gray-50 dark:bg-transparent"
+                  } text-gray-800 hover:bg-[#d9dfda] dark:text-gray-200`}>
                     <span>{item.question}</span>
                     <ChevronUpIcon
-                      className={`${open ? "transform rotate-180" : ""} w-6 h-6 text-[#db280f]`}
+                      className={`${open ? "transform rotate-180" : ""} w-6 h-6 text-[#5e75a8]`}
                     />
                   </Disclosure.Button>
                   <motion.div

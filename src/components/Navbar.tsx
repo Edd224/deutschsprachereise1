@@ -39,7 +39,7 @@ export const Navbar = () => {
       <nav className="container relative flex flex-wrap items-center justify-between p-4 mx-auto lg:justify-between xl:px-1">
         <a href="/">
           <span className="flex space-x-1 items-center text-xl sm:text-2xl font-medium text-black dark:text-gray-100">
-            <span className="bg-trueGray-900 ">
+            <span className="bg-[#0f0a08] ">
               <Image className="p-[5px]" src="/img/logo.svg" width="40" height="40" alt="Logo" />
             </span>
             <span className="">eutschSpracheReise</span>

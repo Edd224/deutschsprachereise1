@@ -70,16 +70,16 @@ export const Hero = () => {
       {/* Content */}
       <Container className="relative z-10 flex flex-wrap top-0 sm:top-28">
         <div className="flex item-center mt-20 w-full lg:w-1/2">
-          <div className="max-w-2xl mx-auto mb-8 flex flex-col justify-center items-center">
-            <h1 className={`${alternativeFont.className} text-3xl font-bold text-white lg:text-4xl xl:text-6xl`}>
-              Deutschsprachereise
-            </h1>
+          <div className="max-w-2xl mx-auto mt-16 flex flex-col justify-center items-center">
             <div className="w-44 sm:w-full">
               <TypedComponent />
             </div>
+            <h1 className={`${alternativeFont.className} text-3xl font-bold text-white lg:text-4xl xl:text-6xl`}>
+              Deutschsprachereise
+            </h1>
           </div>
         </div>
-        <div className="flex items-center mx-auto justify-center w-[40%]  lg:w-1/2">
+        <div className="flex items-center mx-auto sm:mt-0 mt-10 justify-center w-[40%] lg:w-1/2">
           <div>
             <Image
               src={heroImg}
