@@ -1,8 +1,9 @@
 "use client";
 import React from "react";
 import { Container } from "@/components/Container";
-import { Disclosure, DisclosureButton, DisclosurePanel } from "@headlessui/react";
+import { Disclosure } from "@headlessui/react";
 import { ChevronUpIcon } from "@heroicons/react/24/solid";
+import { motion } from "framer-motion";
 
 export const Faq = () => {
   return (
@@ -13,17 +14,24 @@ export const Faq = () => {
             <Disclosure>
               {({ open }) => (
                 <>
-                  <DisclosureButton className="flex items-center justify-between w-full px-4 py-4 text-lg text-left text-gray-800 rounded-lg bg-gray-50 hover:bg-gray-100 focus:outline-none focus-visible:ring focus-visible:ring-indigo-100 focus-visible:ring-opacity-75 dark:bg-trueGray-800 dark:text-gray-200">
+                  <Disclosure.Button className={`flex items-center justify-between w-full px-4 py-4 text-lg text-left rounded-lg focus:outline-none focus-visible:ring focus-visible:ring-indigo-100 focus-visible:ring-opacity-75 ${
+                    open ? "bg-gray-200 dark:bg-[#0f1f27]" : "bg-gray-50 dark:bg-transparent"
+                  } text-gray-800 hover:bg-gray-100 dark:text-gray-200`}>
                     <span>{item.question}</span>
                     <ChevronUpIcon
-                      className={`${
-                        open ? "transform rotate-180" : ""
-                      } w-5 h-5 text-indigo-500`}
+                      className={`${open ? "transform rotate-180" : ""} w-6 h-6 text-[#db280f]`}
                     />
-                  </DisclosureButton>
-                  <DisclosurePanel className="text-lg px-4 pt-4 pb-2 text-gray-500 dark:text-gray-300">
-                    {item.answer}
-                  </DisclosurePanel>
+                  </Disclosure.Button>
+                  <motion.div
+                    initial={{ height: 0, opacity: 0 }}
+                    animate={{ height: open ? "auto" : 0, opacity: open ? 1 : 0 }}
+                    transition={{ duration: 0.4, ease: "easeInOut" }}
+                    className="overflow-hidden"
+                  >
+                    <Disclosure.Panel static className="text-lg px-4 pt-4 pb-2 text-black dark:text-gray-300">
+                      {item.answer}
+                    </Disclosure.Panel>
+                  </motion.div>
                 </>
               )}
             </Disclosure>
@@ -32,7 +40,7 @@ export const Faq = () => {
       </div>
     </Container>
   );
-}
+};
 
 const faqdata = [
   {
@@ -45,12 +53,10 @@ const faqdata = [
   },
   {
     question: "Aké materiály sú potrebné na kurz?",
-    answer:
-      "Naše kurzy sú vybavené všetkými potrebnými digitálnymi materiálmi, ktoré dostanete priamo od nás. Stačí vám počítač alebo tablet s internetovým pripojením a chuť učiť sa.",
+    answer: "Naše kurzy sú vybavené všetkými potrebnými digitálnymi materiálmi, ktoré dostanete priamo od nás. Stačí vám počítač alebo tablet s internetovým pripojením a chuť učiť sa.",
   },
   {
     question: "Je možné prispôsobiť čas lekcií môjmu rozvrhu?",
-    answer:
-      "Áno, ponúkame flexibilné časy výučby, aby sme vyhoveli vášmu osobnému rozvrhu. Môžete si dohodnúť termíny podľa vašich potrieb.",
+    answer: "Áno, ponúkame flexibilné časy výučby, aby sme vyhoveli vášmu osobnému rozvrhu. Môžete si dohodnúť termíny podľa vašich potrieb.",
   },
 ];

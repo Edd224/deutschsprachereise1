@@ -35,8 +35,8 @@ export const Cost = () => {
                     </div>
 
                     <StackedCarousel height={containerHeight} autoplay={true} autoplayInterval={6000} >
-                        <div className="flex items-center justify-center flex-col shadow-lg p-14 bg-black text-center h-96 w-full max-w-[calc(100%-20px)] md:w-[750px] my-12 mx-2 rounded-lg">
-                            <div className="absolute -top-0 -left-[-10px] sm:-left-[70px] mt-12 bg-black text-white px-3 py-2.5 rounded-md">
+                        <div className="flex items-center justify-center flex-col shadow-lg p-14 bg-[#2b2d42] text-center h-96 w-full max-w-[calc(100%-20px)] md:w-[750px] my-12 mx-2 rounded-lg">
+                            <div className="absolute -top-0 -left-[-10px] sm:-left-[70px] mt-12 bg-[#2b2d42] text-white px-3 py-2.5 rounded-md">
                                 <h2 className="text-2xl ml-2">Kurzy</h2>
                             </div>
                             <div className="mb-6">
@@ -44,7 +44,7 @@ export const Cost = () => {
                                     src={Headset}
                                     width="80"
                                     height="80"
-                                    className="object-cover w-full bg-[#130c0c] rounded-full opacity-60 backdrop-blur-xl p-2 sm:p-4 border"
+                                    className="object-cover w-full bg-[#000] rounded-full opacity-60 backdrop-blur-xl p-2 sm:p-4 border"
                                     alt="Hero Illustration"
                                     loading="eager"
                                 />
@@ -67,8 +67,8 @@ export const Cost = () => {
                             </div>
                         </div>
 
-                        <div className="flex items-center justify-center flex-col shadow-lg p-8 bg-[#dd0000] text-center h-96 w-full max-w-[calc(100%-20px)] md:w-[750px] my-12 mx-2 rounded-lg">
-                            <div className="absolute  -top-0 -left-[-10px] sm:-left-[70px] mt-12 bg-[#dd0000] text-white px-3 py-2.5 rounded-md">
+                        <div className="flex items-center justify-center flex-col shadow-lg p-8 bg-[#2b2d42] text-center h-96 w-full max-w-[calc(100%-20px)] md:w-[750px] my-12 mx-2 rounded-lg">
+                            <div className="absolute  -top-0 -left-[-10px] sm:-left-[70px] mt-12 bg-[#2b2d42] text-white px-3 py-2.5 rounded-md">
                                 <h2 className="text-2xl">Preklady</h2>
                             </div>
                             <div className="mb-6">
@@ -76,7 +76,7 @@ export const Cost = () => {
                                     src={Translate}
                                     width="80"
                                     height="80"
-                                    className="object-cover w-full bg-[#130c0c] rounded-full opacity-60 backdrop-blur-xl p-2 sm:p-4 border border-red-500"
+                                    className="object-cover w-full bg-[#DD0000] rounded-full opacity-60 backdrop-blur-xl p-2 sm:p-4 border border-white"
                                     alt="Hero Illustration"
                                     loading="eager"
                                 />
@@ -93,24 +93,24 @@ export const Cost = () => {
                             </ul>
                         </div>
 
-                        <div className="flex items-center justify-center flex-col ] shadow-lg p-8 bg-[#ffce00] text-center h-96 w-full max-w-[calc(100%-20px)] md:w-[750px] my-12 mx-2 rounded-lg">
-                            <div className="absolute -top-0 -left-[-10px] sm:-left-[70px] mt-12 bg-[#ffce00] text-white px-3 py-2.5 rounded-md">
-                                <h2 className="text-2xl text-black ">Korektúra</h2>
+                        <div className="flex items-center justify-center flex-col ] shadow-lg p-8 bg-[#2b2d42] text-center h-96 w-full max-w-[calc(100%-20px)] md:w-[750px] my-12 mx-2 rounded-lg">
+                            <div className="absolute -top-0 -left-[-10px] sm:-left-[70px] mt-12 bg-[#2b2d42] text-white px-3 py-2.5 rounded-md">
+                                <h2 className="text-2xl text-white ">Korektúra</h2>
                             </div>
                             <div className="mb-6">
                                 <Image
                                     src={Text}
                                     width="80"
                                     height="80"
-                                    className="object-cover w-full bg-[#130c0c] rounded-full opacity-60 backdrop-blur-xl p-2 sm:p-4 border border-yellow-600"
+                                    className="object-cover w-full bg-[#FFCC00] rounded-full opacity-60 backdrop-blur-xl p-2 sm:p-4 border border-white"
                                     alt="Hero Illustration"
                                     loading="eager"
                                 />
                             </div>
-                            <h2 className="text-2xl font-bold mb-4 text-black">
+                            <h2 className="text-2xl font-bold mb-4 text-white">
                                 Korektúra
                             </h2>
-                            <ul className="space-y-4 text-lg text-black">
+                            <ul className="space-y-4 text-lg text-white">
                                 <li><strong>Korektúra SJ textu:</strong> <em>8 EUR / 1 NS <br />(1800 znakov s medzerami)</em></li>
                                 <li><strong>Korektúra NJ textu:</strong> <em>10 EUR / 1 NS <br />(1800 znakov s medzerami)</em></li>
                             </ul>

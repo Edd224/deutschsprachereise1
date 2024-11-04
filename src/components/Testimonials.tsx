@@ -138,7 +138,7 @@ interface AvatarProps {
 
 function Avatar({ image, name, title }: AvatarProps) {
   return (
-    <div className="flex flex-row sm:flex-col space-x-2  items-center w-full sm:w-1/2  ">
+    <div className="flex flex-row mt-4 sm:flex-col space-x-2  items-center w-full sm:w-1/2  ">
       <div className="flex-shrink-0 overflow-hidden  w-16 h-16">
         <Image
           src={image}
