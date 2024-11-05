@@ -26,7 +26,7 @@ export const Cost = () => {
                 <meta name="description" content="Pozrite si náš cenník individuálnych a skupinových kurzov, prekladov a korektúr." />
             </Head>
 
-            <div className="relative w-full my-16 border-t border-gray-100 dark:border-trueGray-700">
+            <div className="relative w-full my-16 border-t border-gray-100 dark:border-[#015C75]">
                 <Container className="relative z-10">
                     <div className="text-center mb-12">
                         <h1 className="text-4xl font-semibold text-gray-600 uppercase dark:text-gray-300">
@@ -94,7 +94,7 @@ export const Cost = () => {
                         </div>
 
                         <div className="flex items-center justify-center flex-col ] shadow-lg p-8 dark:bg-[#131412] bg-[#8fc1bc] dark:text-white text-[#100b09] text-center h-96 w-full max-w-[calc(100%-20px)] md:w-[750px] my-12 mx-2 rounded-lg">
-                            <div className="absolute -top-0 -left-[-10px] sm:-left-[70px] mt-12 dark:bg-[#131412] bg-[#8fc1bc]  text-[#100b09] px-3 py-2.5 rounded-md">
+                            <div className="absolute -top-0 -left-[-10px] sm:-left-[70px] mt-12 dark:bg-[#131412] bg-[#8fc1bc]  px-3 py-2.5 rounded-md">
                                 <h2 className="text-2xl">Korektúra</h2>
                             </div>
                             <div className="mb-6">

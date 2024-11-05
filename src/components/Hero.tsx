@@ -97,7 +97,7 @@ export const Hero = () => {
       <Container>
         <div className="flex flex-col justify-center py-4 mt-[30px] sm:mt-[160px] ">
           <div className="text-2xl text-center text-white z-40">
-            Dôveruje nám viac ako <span className="text-indigo-600">50+</span>{" "}
+            Dôveruje nám viac ako <span className="text-[#015C75]">50+</span>{" "}
             študentov
           </div>
 

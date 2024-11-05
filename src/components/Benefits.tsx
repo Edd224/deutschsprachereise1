@@ -79,7 +79,7 @@ export const Benefits = (props: Readonly<BenefitsProps>) => {
             width={550}
             height={550}
             alt="Benefits"
-            className={"object-cover rounded-lg"}
+            className={"object-cover rounded-lg border-2 dark:border-[#015C75] border-gray-400"}
             placeholder="blur"
             blurDataURL={data.image.src}
           />
@@ -93,10 +93,10 @@ export const Benefits = (props: Readonly<BenefitsProps>) => {
           className={`flex flex-wrap sm:px-6 px-0 items-center w-full lg:w-1/2 ${data.imgPos === "right" ? "lg:justify-end" : ""}`}
         >
           <div className="flex flex-col w-full mt-4">
-            <h1 className="max-w-2xl text-3xl font-bold text-gray-800 lg:text-4xl dark:text-white">
+            <h1 className="max-w-2xl text-3xl font-bold text-gray-800 lg:text-4xl dark:text-white relative custom-underline">
               {data.title}
             </h1>
-            <p className="max-w-2xl pt-4 text-lg text-gray-500 lg:text-xl xl:text-xl dark:text-gray-300">
+            <p className="max-w-2xl pt-6 text-lg text-gray-500 lg:text-xl xl:text-xl dark:text-gray-300">
               {data.desc}
             </p>
           </div>
@@ -121,7 +121,7 @@ function Benefit(props: any) {
       transition={{ duration: 0.4 }}
       className="flex items-start mt-6 space-x-3"
     >
-      <div className="flex items-center justify-center flex-shrink-0 mt-1 bg-[#5e75a8] rounded-md w-11 h-11 ">
+      <div className="flex items-center justify-center flex-shrink-0 mt-1 bg-[#015C75] rounded-md w-11 h-11 ">
         {React.cloneElement(props.icon, {
           className: "w-7 h-7 text-indigo-50",
         })}

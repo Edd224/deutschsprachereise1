@@ -63,7 +63,7 @@ export function PopupWidget() {
       <Disclosure>
         {({ open }) => (
           <>
-            <DisclosureButton className="fixed z-40 flex items-center justify-center transition duration-300 bg-[#5e75a8] rounded-full shadow-lg right-5 bottom-5 w-14 h-14 focus:outline-none hover:bg-[#050303] focus:bg-[#050303] ease">
+            <DisclosureButton className="fixed z-40 flex items-center justify-center transition duration-300 bg-[#015C75] rounded-full shadow-lg right-5 bottom-20 w-14 h-14 focus:outline-none hover:bg-[#050303] focus:bg-[#050303] ease">
               <span className="sr-only">Open Contact form Widget</span>
               <Transition
                 show={!open}
@@ -115,7 +115,7 @@ export function PopupWidget() {
               </Transition>
             </DisclosureButton>
             <Transition
-              className="fixed  z-50 bottom-[100px] top-0 right-0  left-0 sm:top-auto sm:right-5 sm:left-auto"
+              className="fixed  z-50 bottom-[130px] top-0 right-0  left-0 sm:top-auto sm:right-5 sm:left-auto"
               enter="transition duration-200 transform ease"
               enterFrom="opacity-0 translate-y-5"
               leave="transition duration-200 transform ease"

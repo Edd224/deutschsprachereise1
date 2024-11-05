@@ -39,8 +39,21 @@
   margin: 0 6px;
   padding: 8px;
   cursor: pointer;
-  background-color: #576ea2 !important;
+  background-color: #015C75 !important;
   transition: background-color 0.3s;
 }
+
+.custom-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 70px;
+  bottom: -8px; /* nastaví vzdialenosť podčiarknutia */
+  height: 2px;  /* hrúbka podčiarknutia */
+  background-color: #015C75; /* farba podčiarknutia */
+  width: 100%; /* šírka podčiarknutia */
+  /* margin: auto; */
+}
+
 
 

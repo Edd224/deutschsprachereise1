@@ -23,7 +23,7 @@ export const SectionTitle = (props: Readonly<SectionTitleProps>) => {
         props.align === "left" ? "" : "items-center justify-center text-center"
       }`}>
       {props.preTitle && (
-        <div className="text-sm font-bold mt-16 text-indigo-600 uppercase">
+        <div className="text-sm font-bold mt-16 text-[#015C75] uppercase">
           {props.preTitle}
         </div>
       )}

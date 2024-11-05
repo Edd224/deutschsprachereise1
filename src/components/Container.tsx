@@ -10,7 +10,7 @@ export const Container = forwardRef<HTMLDivElement, ContainerProps>(
     return (
       <div
         ref={ref}
-        className={`container p-6 mx-auto xl:px-0 ${
+        className={`container p-6 mx-auto xl:px-10 ${
           props.className ? props.className : ""
         }`}
       >

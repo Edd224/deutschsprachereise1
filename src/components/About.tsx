@@ -21,7 +21,7 @@ export const About = () => {
                 <meta name="description" content="Deutschsprachereise je jazyková společnost zaměřená na online výuku němčiny a slovenštiny, překladatelské a editorskou činnost." />
                 <meta name="keywords" content="jazykové kurzy, němčina, slovenština, online výuka, překlady, editorská činnost" />
             </Head>
-            <div className="relative w-full pt-10 border-t border-gray-100 dark:border-trueGray-700">
+            <div className="relative w-full pt-10 border-t border-gray-400 dark:border-[#015C75]">
                 <Container className="relative z-10 flex flex-wrap">
                     <div className="flex sm:text-left text-center items-center w-full lg:w-1/2">
                         <div className="max-w-2xl mb-8">
@@ -49,11 +49,12 @@ export const About = () => {
                                 alt="Hero Illustration"
                                 loading="eager"
                             />
-                            <div className="absolute inset-0 flex items-center justify-center">
+                            <div className="absolute inset-0 bg-[#00242F] opacity-50 rounded-lg"></div>
+                            <div className="absolute inset-0 flex items-center justify-center text-[#015C75]">
                                 <Image
                                     src={logo}
                                     alt="Logo"
-                                    className="w-32 h-32 lg:w-40 lg:h-40"
+                                    className="w-32 h-32 lg:w-40 lg:h-40 text-[#015C75]"
                                 />
                             </div>
                         </div>

@@ -19,7 +19,7 @@ export const Faq = () => {
                   } text-gray-800 hover:bg-[#d9dfda] dark:text-gray-200`}>
                     <span>{item.question}</span>
                     <ChevronUpIcon
-                      className={`${open ? "transform rotate-180" : ""} w-6 h-6 text-[#5e75a8]`}
+                      className={`${open ? "transform rotate-180" : ""} w-6 h-6 text-[#015C75]`}
                     />
                   </Disclosure.Button>
                   <motion.div
