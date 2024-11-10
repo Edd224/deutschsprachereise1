@@ -10,6 +10,11 @@ import flag from "../../public/img/FlagGermani.jpg";
 import { Typed } from "react-typed";
 import { useEffect, useRef } from "react";
 import localFont from "next/font/local";
+import InfiniteScrollingLogosAnimation from "./InfiniteScrollingLogosAnimation";
+
+
+
+
 
 const alternativeFont = localFont({
   src: '../app/font/EireneSans-Regular.otf'
@@ -83,8 +88,8 @@ export const Hero = () => {
           <div>
             <Image
               src={heroImg}
-              width="300"
-              height="300"
+              width="250"
+              height="250"
               className={"object-contain"}
               alt="Hero Illustration"
               loading="eager"
@@ -101,8 +106,10 @@ export const Hero = () => {
             študentov
           </div>
 
-          <div className="Logo flex justify-center gap-4 md:justify-around mt-2 z-30">
-            <div className="">
+          <div className="">
+            <InfiniteScrollingLogosAnimation />
+
+            {/* <div className="">
               <Image
                 src={adient}
                 width={150}
@@ -130,7 +137,7 @@ export const Hero = () => {
                 loading="eager"
 
               />
-            </div>
+            </div> */}
           </div>
         </div>
       </Container>

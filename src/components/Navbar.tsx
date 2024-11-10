@@ -91,8 +91,8 @@ export const Navbar = () => {
       </div>
 
       {/* Spodná navigácia pre mobilné zariadenia */}
-      <div className="fixed bottom-0 left-0 w-full h-16 bg-[#015C75] lg:hidden z-50">
-        <nav className="flex  justify-around items-end align-middle">
+      <div className="fixed bottom-0 left-0 w-[80%] h-16 bg-[#015C75] lg:hidden z-50 rounded-tr-full ">
+        <nav className="flex justify-around items-end align-middle my-2">
           {navigation.map((item) => {
             const Icon = item.icon;
             return (

@@ -63,7 +63,7 @@ export function PopupWidget() {
       <Disclosure>
         {({ open }) => (
           <>
-            <DisclosureButton className="fixed z-40 flex items-center justify-center transition duration-300 bg-[#015C75] rounded-full shadow-lg right-5 bottom-20 w-14 h-14 focus:outline-none hover:bg-[#050303] focus:bg-[#050303] ease">
+            <DisclosureButton className="fixed z-40 flex items-center justify-center transition duration-300 bg-[#015C75] rounded-full shadow-lg right-5 bottom-14 w-14 h-14 focus:outline-none hover:bg-[#050303] focus:bg-[#050303] ease">
               <span className="sr-only">Open Contact form Widget</span>
               <Transition
                 show={!open}
@@ -74,7 +74,7 @@ export function PopupWidget() {
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="absolute w-6 h-6 text-white"
+                  className="absolute w-6 h-6 text-white animate-pulse"
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
