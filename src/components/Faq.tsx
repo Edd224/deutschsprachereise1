@@ -44,19 +44,19 @@ export const Faq = () => {
 
 const faqdata = [
   {
-    question: "Ako prebiehajú online kurzy nemčiny?",
+    question: "Ako prebiehajú online kurzy nemčiny ?",
     answer: "Naše kurzy prebiehajú cez videohovory v reálnom čase, kde sa priamo zapájate do výučby. Lektor vedie hodinu interaktívne a môžete klásť otázky, precvičovať konverzáciu a zlepšovať svoje jazykové schopnosti.",
   },
   {
-    question: "Potrebujem mať predchádzajúce znalosti nemčiny?",
+    question: "Potrebujem mať predchádzajúce znalosti nemčiny ?",
     answer: "Nie, ponúkame kurzy pre všetky úrovne. Či ste úplný začiatočník alebo máte pokročilé znalosti, prispôsobíme obsah vášmu aktuálnemu jazykovému stupňu.",
   },
   {
-    question: "Aké materiály sú potrebné na kurz?",
+    question: "Aké materiály sú potrebné na kurz ?",
     answer: "Naše kurzy sú vybavené všetkými potrebnými digitálnymi materiálmi, ktoré dostanete priamo od nás. Stačí vám počítač alebo tablet s internetovým pripojením a chuť učiť sa.",
   },
   {
-    question: "Je možné prispôsobiť čas lekcií môjmu rozvrhu?",
+    question: "Je možné prispôsobiť čas lekcií môjmu rozvrhu ?",
     answer: "Áno, ponúkame flexibilné časy výučby, aby sme vyhoveli vášmu osobnému rozvrhu. Môžete si dohodnúť termíny podľa vašich potrieb.",
   },
 ];
