@@ -97,7 +97,7 @@ export const Testimonials: React.FC = () => {
               key={index}
               className="flex-shrink-0 w-full cursor-grab px-1 sm:px-10"
             >
-              <div className="flex flex-col sm:flex-row items-center justify-between h-full bg-gray-100 border border-[#cde9e5] sm:px-14 px-4 rounded-2xl py-4 sm:py-14 dark:bg-transparent">
+              <div className="flex flex-col sm:flex-row items-center justify-between h-full border border-[#cde9e5] sm:px-14 px-4 rounded-2xl py-4 sm:py-14 bg-[#e2e8e4] dark:bg-transparent">
                 <p className={`${alternativeFont} italic w-full sm:w-1/2 text-2xl leading-normal`}>
                   {testimonial.text}
                 </p>

@@ -122,11 +122,11 @@ export function PopupWidget() {
               leaveTo="opacity-0 translate-y-5"
               as="div"
             >
-              <DisclosurePanel className=" flex flex-col  overflow-hidden left-0 h-full w-full sm:w-[350px] min-h-[250px] sm:h-[600px] border border-gray-300 dark:border-gray-800 bg-white shadow-2xl rounded-md sm:max-h-[calc(100vh-120px)]">
-                <div className="flex flex-col items-center justify-center h-32 p-5 bg-trueGray-900">
+              <DisclosurePanel className=" flex flex-col overflow-hidden left-0 h-full w-full sm:w-[350px] min-h-[250px] sm:h-[600px] rounded-bl-[80px]  bg-white shadow-2xl rounded-md sm:max-h-[calc(100vh-120px)]">
+                <div className="flex flex-col items-center justify-center h-32 p-5 bg-[#015C75]">
                   <h3 className="text-lg text-white">Ako Vám môžeme pomôcť?</h3>
                 </div>
-                <div className="flex-grow h-full p-6 overflow-auto bg-trueGray-900 ">
+                <div className="flex-grow h-full p-6 overflow-auto bg-[#015C75] ">
                   {!isSubmitSuccessful && (
                     <form onSubmit={handleSubmit(onSubmit)} noValidate>
                       <div className="mb-4">
@@ -221,7 +221,7 @@ export function PopupWidget() {
 
                       <button
                         type="submit"
-                        className="w-full px-4 py-3 text-sm font-medium text-white bg-black border border-[#333] rounded-md"
+                        className="w-full px-4 py-3 text-sm font-medium text-white bg-[#09232b] border border-[#fff] rounded-md"
                       >
                         {isSubmitting ? (
                           <svg

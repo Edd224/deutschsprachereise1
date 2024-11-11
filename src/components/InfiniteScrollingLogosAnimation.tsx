@@ -16,7 +16,7 @@ const CompanyLogodata = [
 
 const InfiniteScrollingLogosAnimation = () => {
     return (
-        <div className="container bg-[#111] bg-opacity-10 backdrop-blur-lg shadow-md p-5">
+        <div className="container p-5">
             <Slider 
             width="50px"
             duration={10}
