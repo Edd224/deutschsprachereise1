@@ -5,7 +5,7 @@ import Image from "next/image";
 import { Disclosure } from "@headlessui/react";
 import { Link as ScrollLink } from "react-scroll";
 import { useEffect, useState } from "react";
-import { House, Briefcase, Info, Money } from "phosphor-react"; // Import ikony
+import { House, Briefcase, Info, Money, PhoneDisconnect } from "phosphor-react"; // Import ikony
 
 export const Navbar = () => {
   const navigation = [
@@ -13,6 +13,7 @@ export const Navbar = () => {
     { name: "Služby", href: "benefits", icon: Briefcase },
     { name: "O nás", href: "about", icon: Info },
     { name: "Cenník", href: "cost", icon: Money },
+    { name: "Kontakt", href: "contact", icon: PhoneDisconnect },
   ];
 
   const [isScrolled, setIsScrolled] = useState(false);
@@ -32,7 +33,7 @@ export const Navbar = () => {
       <div
         className={`w-full fixed cursor-pointer top-0 left-0 z-50 ${
           isScrolled
-            ? "bg-[#181d22] bg-opacity-50 backdrop-blur-lg shadow-md"
+            ? "bg-[#00242F] bg-opacity-50 backdrop-blur-lg shadow-md"
             : "bg-transparent"
         } transition-all duration-900 ease-in`}
       >

@@ -10,6 +10,7 @@ import { About } from "@/components/About";
 
 import { benefitOne, benefitThre, benefitTwo } from "@/components/data";
 import { Cost } from "@/components/Cost";
+import { Contact } from "@/components/Contact";
 export default function Home() {
   return (
     <Container>
@@ -48,6 +49,10 @@ export default function Home() {
 
       <section id="cost">
         <Cost />
+      </section>
+
+      <section id="contact">
+        <Contact />
       </section>
 
 
