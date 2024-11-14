@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 export const Faq = () => {
   return (
     <Container className="!p-0">
-      <div className="w-full max-w-2xl p-2 mx-auto rounded-2xl">
+      <div className="w-full max-w-3xl p-2 mx-auto rounded-2xl">
         {faqdata.map((item, index) => (
           <div key={item.question} className="mb-5">
             <Disclosure>

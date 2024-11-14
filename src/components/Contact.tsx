@@ -8,6 +8,13 @@ import Head from "next/head";
 import { Envelope, FacebookLogo, PhoneCall } from "phosphor-react";
 import { motion } from "framer-motion"; // Import Framer Motion
 
+
+
+
+
+
+
+
 export const Contact = () => {
     return (
         <>

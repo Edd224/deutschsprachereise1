@@ -21,11 +21,11 @@ export const About = () => {
                 <meta name="description" content="Deutschsprachereise je jazyková společnost zaměřená na online výuku němčiny a slovenštiny, překladatelské a editorskou činnost." />
                 <meta name="keywords" content="jazykové kurzy, němčina, slovenština, online výuka, překlady, editorská činnost" />
             </Head>
-            <div className="relative w-full pt-10 border-t border-gray-400 dark:border-[#015C75]">
+            <div className="relative w-full pt-10 border-t px-2 sm:px-8 border-gray-400 dark:border-[#015C75]">
                 <Container className="relative z-10 flex flex-wrap">
                     <div className="flex sm:text-left text-center items-center w-full lg:w-1/2">
                         <div className="max-w-2xl mb-8">
-                            <h1 className="text-3xl font-bold text-gray-800 lg:text-4xl xl:text-6xl dark:text-white">
+                            <h1 className="text-3xl font-bold text-gray-800 lg:text-4xl xl:text-5xl dark:text-white">
                                 Deutschsprachereise
                             </h1>
                             <motion.p
@@ -33,7 +33,7 @@ export const About = () => {
                                 initial={{ opacity: 0, y: 10 }}
                                 animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : 10 }}
                                 transition={{ duration: 0.4 }}
-                                className="py-5 mr-4 text-base leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300"
+                                className="py-5 pr-4 text-base leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300"
                             >
                                 Sme jazyková spoločnosť, ktorá sa zaoberá výučbou nemeckého a slovenského jazyka online formou, prekladateľskou a editorskou činnosťou.
                                 Vydajte sa s nami na cestu nemeckým jazykom. Popracujte na vlastnom osobnostnom rozvoji, zdokonaľte svoje komunikačné zručnosti a rozšírte pracovné možnosti.

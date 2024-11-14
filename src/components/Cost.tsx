@@ -137,7 +137,7 @@ export const Cost: React.FC = () => {
                         {slides.map((slide, index) => (
                             <motion.div
                                 key={index}
-                                className="flex-shrink-0 w-full px-2 sm:px-10"
+                                className="flex-shrink-0 w-full px-2 sm:px-8"
                                 initial={{ x: "100%", opacity: 0 }}
                                 animate={{ x: 0, opacity: 1 }}
                                 exit={{ x: "-100%", opacity: 0 }}
