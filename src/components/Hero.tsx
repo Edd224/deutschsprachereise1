@@ -64,9 +64,9 @@ export const Hero = () => {
           autoPlay
           muted
           loop
-          className="w-full h-[80%] object-cover opacity-100 dark:opacity-60 rounded-tl-[580px] rounded-tr-2xl "
+          className="w-full h-[80%] object-cover opacity-100 -hue-rotate-90 saturate-50 dark:opacity-60 rounded-tl-[580px] rounded-tr-2xl "
         >
-          <source src="/video/video-bg-2.mp4" type="video/mp4" />
+          <source src="/video/videoBG.mp4" type="video/mp4" />
         </video>
       </div>
 

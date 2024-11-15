@@ -17,19 +17,36 @@ export function Footer() {
                 href="/"
                 className="flex items-center space-x-2 text-2xl font-medium text-[#333] dark:text-gray-100"
               >
-                <Image
-                  src="/img/logo.svg"
-                  alt="N"
-                  width="32"
-                  height="32"
-                  className="w-8"
-                />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 186.26 209.43"
+                  width="40"
+                  height="40"
+                  className="text-black dark:text-white"
+                >
+                  <g>
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-miterlimit="10"
+                      stroke-width="22"
+                      d="M10.13,198.32c21.62,0,43.31-.5,64.92.07,19.71.52,39.13-4.25,55.87-14.85,31.17-19.73,48.22-55.89,43.6-92.41-2.3-18.19-9.52-36.01-21.56-49.95-12.01-13.9-28.6-23.78-46.51-27.83-11.22-2.54-22.77-2.35-34.2-2.35-20.41,0-40.82,0-61.23,0h-.87"
+                    />
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-miterlimit="10"
+                      stroke-width="22"
+                      d="M20.81,32.91v129.97c21.71,0,43.59.82,65.27.07,15.54-.54,29.99-9.56,39.45-21.55,8.58-10.88,13.79-24.47,14.21-38.32.42-13.85-4.02-27.87-12.69-38.68-10.6-13.21-26.5-20.59-43.23-20.49-10.32.06-20.63,0-30.95,0v92.81"
+                    />
+                  </g>
+                </svg>
                 <span>eutschsprachereise</span>
               </Link>
             </div>
 
             <div className="max-w-md mt-4 text-gray-500 dark:text-gray-400">
-            Jazyková škola DeutschSpracheReise sa špecializuje na výučbu nemeckého online. Spojte sa s nami a začnite svoju jazykovú cestu ešte dnes!
+              Jazyková škola DeutschSpracheReise sa špecializuje na výučbu nemeckého online. Spojte sa s nami a začnite svoju jazykovú cestu ešte dnes!
             </div>
 
           </div>
@@ -98,7 +115,7 @@ export function Footer() {
         <div className="my-10 text-sm text-center text-gray-600 dark:text-gray-400">
           Copyright © {new Date().getFullYear()}. Made with ♥ by{" "}
           <a href="https://web3templates.com/" target="_blank" rel="noopener">
-            
+
           </a>{" "}
           Illustrations from{" "}
           <a href="/" target="_blank" rel="noopener ">

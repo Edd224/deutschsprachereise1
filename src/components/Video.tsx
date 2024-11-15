@@ -9,7 +9,7 @@ export function Video() {
 
   return (
     <Container>
-      <div className="relative w-full h-[500px] mx-auto overflow-hidden lg:mb-20 rounded-2xl bg-[#015C75] cursor-pointer bg-gradient-to-tr from-[#242444c4] to-[#080808d8]">
+      <div className="relative w-full h-[500px] mx-auto overflow-hidden lg:mb-20 rounded-2xl bg-[#015C75] cursor-pointer bg-gradient-to-tr from-[#e2e8e4] to-[#96c7c3] dark:from-[#242444c4] dark:to-[#080808d8]">
         {!playVideo && (
           <button
             onClick={() => setPlayVideo(!playVideo)}

@@ -14,7 +14,7 @@ import localFont from "next/font/local"
 // const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Deutschsprachereise",
+  title: "Online kurzy pre firmy | jednotlivcov",
   description: "Profesionálne online kurzy a odborné preklady z/do nemčiny pre firmy a jednotlivcov. Zlepšite svoje jazykové zručnosti s individuálnym prístupom.",
   icons: {
     icon: "/favicon.ico"

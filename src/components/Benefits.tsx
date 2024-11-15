@@ -24,23 +24,19 @@ interface BenefitsProps {
 export const Benefits = (props: Readonly<BenefitsProps>) => {
   const { data } = props;
 
-  // Hook pre animácie a sledovanie viditeľnosti
   const controls = useAnimation();
-  const [isInView, setIsInView] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          setIsInView(true);
-          controls.start("visible"); // Spustí animáciu pri zobrazení
+          controls.start("visible");
         } else {
-          setIsInView(false);
-          controls.start("hidden"); // Skryje pri odchode
+          controls.start("hidden"); // Reset animácie pri odchode
         }
       },
-      { threshold: 0.3 } // Spustí animáciu, keď je 20 % elementu na obrazovke
+      { threshold: 0.3 }
     );
 
     if (ref.current) {
@@ -52,10 +48,13 @@ export const Benefits = (props: Readonly<BenefitsProps>) => {
     };
   }, [controls]);
 
-  // Definovanie animácií pre fade-in efekt
   const fadeInVariant = {
     hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0 },
+    visible: (custom: number) => ({
+      opacity: 1,
+      y: 0,
+      transition: { delay: custom * 0.3, duration: 0.5 },
+    }),
   };
 
   return (
@@ -66,13 +65,19 @@ export const Benefits = (props: Readonly<BenefitsProps>) => {
         <meta name="keywords" content="jazykové kurzy, online výučba, prekladateľská činnosť, korektúry, nemčina" />
       </Head>
 
-      <Container ref={ref} className="flex flex-wrap bg-[#e2e8e4] dark:bg-[#131412] mb-20 lg:gap-10 lg:flex-nowrap rounded-lg">
+      <Container
+        ref={ref}
+        className="flex flex-wrap bg-[#e2e8e4] dark:bg-[#131412] mb-20 lg:gap-10 lg:flex-nowrap rounded-lg"
+      >
+        {/* Obrázok */}
         <motion.div
           initial="hidden"
           animate={controls}
           variants={fadeInVariant}
-          transition={{ duration: 0.3 }}
-          className={`flex items-center justify-center w-full lg:w-1/2 ${props.imgPos === "right" ? "lg:order-1" : ""}`}
+          custom={1}
+          className={`flex items-center justify-center w-full lg:w-1/2 ${
+            props.imgPos === "right" ? "lg:order-1" : ""
+          }`}
         >
           <Image
             src={data.image}
@@ -85,24 +90,37 @@ export const Benefits = (props: Readonly<BenefitsProps>) => {
           />
         </motion.div>
 
+        {/* Textový obsah */}
         <motion.div
           initial="hidden"
           animate={controls}
           variants={fadeInVariant}
-          transition={{ duration: 0.5, delay: 0.4 }}
-          className={`flex flex-wrap sm:px-6 px-0 items-center w-full lg:w-1/2 ${data.imgPos === "right" ? "lg:justify-end" : ""}`}
+          custom={2}
+          className={`flex flex-wrap sm:px-6 px-0 items-center w-full lg:w-1/2 ${
+            data.imgPos === "right" ? "lg:justify-end" : ""
+          }`}
         >
           <div className="flex flex-col w-full mt-4">
-            <h1 className="max-w-2xl text-3xl font-bold text-gray-800 lg:text-4xl dark:text-white relative custom-underline">
+            <motion.h1
+              className="max-w-2xl text-3xl font-bold text-gray-800 lg:text-4xl dark:text-white relative custom-underline"
+              variants={fadeInVariant}
+              custom={3}
+            >
               {data.title}
-            </h1>
-            <p className="max-w-2xl pt-6 text-lg text-gray-500 lg:text-xl xl:text-xl dark:text-gray-300">
+            </motion.h1>
+            <motion.p
+              className="max-w-2xl pt-6 text-lg text-gray-500 lg:text-xl xl:text-xl dark:text-gray-300"
+              variants={fadeInVariant}
+              custom={4}
+            >
               {data.desc}
-            </p>
+            </motion.p>
           </div>
+
+          {/* Zoznam bodov */}
           <div className="w-full mt-3">
             {data.bullets.map((item, index) => (
-              <Benefit key={index} title={item.title} icon={item.icon}>
+              <Benefit key={index} title={item.title} icon={item.icon} custom={index + 5}>
                 {item.desc}
               </Benefit>
             ))}
@@ -113,26 +131,25 @@ export const Benefits = (props: Readonly<BenefitsProps>) => {
   );
 };
 
-function Benefit(props: any) {
+function Benefit(props: { title: string; icon: React.ReactNode; children: React.ReactNode; custom: number }) {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.4 }}
+      initial="hidden"
+      animate="visible"
+      variants={{
+        hidden: { opacity: 0, y: 20 },
+        visible: { opacity: 1, y: 0, transition: { delay: props.custom * 0.3, duration: 0.4 } },
+      }}
       className="flex items-start mt-6 space-x-3"
     >
-      <div className="flex items-center justify-center flex-shrink-0 mt-1 bg-[#015C75] rounded-md w-11 h-11 ">
-        {React.cloneElement(props.icon, {
+      <div className="flex items-center justify-center flex-shrink-0 mt-1 bg-[#015C75] rounded-md w-11 h-11">
+        {React.cloneElement(props.icon as React.ReactElement, {
           className: "w-7 h-7 text-indigo-50",
         })}
       </div>
       <div>
-        <h4 className="text-xl font-medium text-gray-800 dark:text-gray-200">
-          {props.title}
-        </h4>
-        <p className="mt-1 text-gray-500 dark:text-gray-400">
-          {props.children}
-        </p>
+        <h4 className="text-xl font-medium text-gray-800 dark:text-gray-200">{props.title}</h4>
+        <p className="mt-1 text-gray-500 dark:text-gray-400">{props.children}</p>
       </div>
     </motion.div>
   );

@@ -11,6 +11,8 @@ import { About } from "@/components/About";
 import { benefitOne, benefitThre, benefitTwo } from "@/components/data";
 import { Cost } from "@/components/Cost";
 import { Contact } from "@/components/Contact";
+
+
 export default function Home() {
   return (
     <Container>
