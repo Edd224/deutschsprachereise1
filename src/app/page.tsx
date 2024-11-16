@@ -11,6 +11,7 @@ import { About } from "@/components/About";
 import { benefitOne, benefitThre, benefitTwo } from "@/components/data";
 import { Cost } from "@/components/Cost";
 import { Contact } from "@/components/Contact";
+import CookiesPolicy from "./CookiesPolicy";
 
 
 export default function Home() {
@@ -24,16 +25,6 @@ export default function Home() {
         <Benefits data={benefitOne} />
         <Benefits imgPos="right" data={benefitTwo} />
         <Benefits data={benefitThre} />
-        {/* <SectionTitle
-          preTitle="Benefity"
-          title="Chcete sa naučiť nemecky z pohodlia kancelárie alebo domova?"
-        >
-          Potrebujete sa dohovoriť so svojimi nemecky hovoriacimi partnermi v ich rodnom jazyku?<br />
-          Pripadá vám nemčina ťažká?<br />
-          Je váš partner cudzinec a chce sa naučiť po slovensky?<br />
-          Potrebujete preložiť dokumenty z/do nemeckého jazyka, prípadne skorigovať vaše texty?
-        </SectionTitle> */}
-
       </section>
 
       <SectionTitle

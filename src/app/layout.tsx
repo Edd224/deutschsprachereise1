@@ -9,6 +9,8 @@ import { Footer } from "@/components/Footer";
 import { PopupWidget }  from "@/components/PopupWidget";
 
 import localFont from "next/font/local"
+import CookieConsent from "@/components/CookieConsent";
+import CookiesPolicy from "./CookiesPolicy";
 
 
 // const inter = Inter({ subsets: ["latin"] });
@@ -53,6 +55,7 @@ export default function RootLayout({
         <ThemeProvider attribute="class">
           <Navbar />
           <div>{children}</div>
+          <CookieConsent />
           <Footer />
           <PopupWidget />
         </ThemeProvider>
