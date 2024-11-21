@@ -98,6 +98,7 @@ export const Cost: React.FC = () => {
     const [selectedIndex, setSelectedIndex] = useState(0);
 
 
+
     const scrollNext = useCallback(() => {
         if (emblaApi) emblaApi.scrollNext();
     }, [emblaApi]);
@@ -120,7 +121,7 @@ export const Cost: React.FC = () => {
     return (
         <>
             <Head>
-                <title>Cenník - Profesionálne kurzy a preklady</title>
+                <title>Cenník | Profesionálne kurzy a preklady</title>
                 <meta
                     name="description"
                     content="Pozrite si náš cenník individuálnych a skupinových kurzov, prekladov a korektúr."
@@ -130,8 +131,14 @@ export const Cost: React.FC = () => {
                 <div className="flex justify-center items-center my-6">
                     <h1 className="text-4xl font-semibold text-gray-600 uppercase dark:text-gray-300">
                         Cenník
+                        <span className="absolute ml-4 text-[#015c7580]  text-[70px] sm:text-[80px]">
+                            -{String(selectedIndex + 1).padStart(2, "0")}
+                        </span>
+
                     </h1>
+
                 </div>
+
                 <div className="overflow-hidden" ref={emblaRef}>
                     <div className="flex">
                         {slides.map((slide, index) => (
@@ -151,10 +158,15 @@ export const Cost: React.FC = () => {
                                         <Image src={slide.imageSrc} alt={slide.imageAlt} width={40} height={40} />
                                     </div>
                                 </div>
+
                             </motion.div>
                         ))}
+
                     </div>
-                </div>                <div className="flex justify-end space-x-2 mt-4 mr-2 sm:mr-10">
+
+                </div>
+
+                <div className="flex justify-end space-x-2 mt-4 mr-2 sm:mr-10">
                     {slides.map((_, index) => (
                         <button
                             key={index}
