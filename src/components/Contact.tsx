@@ -94,7 +94,7 @@ export const Contact = () => {
                 animate={controls}
               >
                 <PhoneCall size={24} />
-                <p className="px-3">+421 948 373 908</p>
+                <p className="px-3">+421 904 038 064</p>
               </motion.div>
 
               <motion.div
